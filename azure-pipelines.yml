@@ -13,5 +13,5 @@ variables:
   imageName: 'xamarin-universe-website:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageName) ./XamarinUniverse-Website
+- script: docker build -f ./XamarinUniverse-Website/Dockerfile -t $(imageName) .
   displayName: 'docker build'
